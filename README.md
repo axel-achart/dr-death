@@ -1,8 +1,5 @@
 # Dr Death
 
-Manque : 
-● Votre analyse des données accompagnée de captures d’écran de vos
-visualisations</br>
 ● La conclusion à la problématique.
 
 
@@ -50,3 +47,23 @@ A partir de ces données, la problématique étudiée est : </br>
 **Quels types de personnes Harold Shipman a-t-il assassinées, et quand sont-elles mortes ?**
 
 ---
+
+Grâce aux graphiques produits avec Power BI, on peut remarquer que la majorité des victimes de Shipman :
+- est âgé entre 75 et 84 ans (45%)
+- est une femme (83%)
+- est décédé chez soi et entre 1995 et 1997 (204 victimes et environ 30 par année)
+- 15 victimes sur 215 ont été officiellement déclaré
+
+On remarque également que les déclarations de Shipman sont bien moins éparpillés que les déclarations de décès des autres medecins.
+Lui a tendance à déclarer en majorité vers 15h/16h l'heure de décès, ce qui amène un doute.
+
+De plus, les valeurs retenues dans la heatmap du notebook Jupyter sont : l'âge et l'heure et la date du décès.
+
+---
+
+**Conclusion**
+Harold Shipman assassine un certain type de personne en majorité. Ce sont les dâmes âgées entre 75 et 84 ans (qui font partie des 15 victimes officielles).
+Mais également des hommes de tout les âges (supérieur à 45 ans), qui sont au nombre de 37, tous faisant partie des victimes illégales non officielles car
+incinérées. Ses victimes les plus jeunes ont au minimum 40 ans. 
+
+Il a commencé sa série de meurtre en 1975. Et a continué jusqu'à 1998. Les années où il a été le plus actif dans sa série de meurtres ont été 1995, 1996 et 1997 avec 30 à 37 meurtres par an.
