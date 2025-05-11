@@ -1,8 +1,5 @@
 # Dr Death
 
-● La conclusion à la problématique.
-
-
 ## Microsoft Power BI Desktop
 
 **Qu'est-ce que Power BI ?**</br>
