@@ -1,66 +1,67 @@
-# Dr Death
+# 🩺 Dr Death—Power BI Analysis
 
-## Microsoft Power BI Desktop
+## 🖥️ Power BI Desktop
 
-**Qu'est-ce que Power BI ?**</br>
-C'est un logiciel de visualisation de données regroupant plusieurs fonctionnalités tel que
-la création de visuels (tableaux de bords, graphiques, cartes) qui s'alimentent à partir de plusieurs sources de données.</br>
-Elle permet de collecter, traiter, analyser et visualiser les données de manière efficace et dynamique.</br>
+**What is Power BI?**  
+Power BI is data visualization software that enables users to create dashboards, charts, and geographic maps, all powered by one or more data sources.  
+It offers robust features to collect, process, analyze, and dynamically visualize data for strategic decision-making.
 
-Sortie en été 2015, cet outil est récent, régulièrement mis à jour ce qui lui permet de rester **leader** sur le marché de l'analyse
-et la visualisation de données pour but stratégique.
-
-
-## Contexte des données et la problématique étudiée
-
-Harold Shipman était un médecin en apparence respecté exerçant à Hyde,
-dans le Grand Manchester. Derrière cette façade de médecin doux et
-compétent, se cachait en fait une vérité sinistre. Entre 1975 et 1998, il a injecté
-au moins 215 doses de ses patients, pour la plupart âgés, à une surdose
-massive d'opiacés.
-
-Nos données fournies se concentrent dans 2 fichiers CSV ("shipman-confirmed-victims.csv" & "shipman-times-comparison.csv").
-
-Dans **shipman-confirmed-victims.csv** :
-> - DateofDeath,
-> - Name,
-> - Age,
-> - PlaceofDeath,
-> - Decision,
-> - yearOfDeath,
-> - gender,
-> - fractionalDeathYear,
-> - ageBracket,
-> - gender2
-
-Dans **shipman-times-comparison.csv** :
-> - Hour,
-> - Shipman,
-> - Comparison
+Released in summer 2015 and updated regularly, Power BI stands out as a **market leader** in business intelligence and data visualization software, providing advanced reporting, an extensive library of visualizations (bar charts, maps, heatmaps, treemaps, etc.), seamless integration with many data sources, and collaborative features for sharing interactive dashboards[web:16][web:17][web:18][web:21].
 
 ---
 
-A partir de ces données, la problématique étudiée est : </br>
-**Quels types de personnes Harold Shipman a-t-il assassinées, et quand sont-elles mortes ?**
+## 📂 Data Context & Analytical Question
+
+The analysis focuses on Harold Shipman—a respected physician in Hyde, Greater Manchester, who, between 1975 and 1998, overdosed at least 215 elderly patients with opiates.
+
+The provided data is spread across two CSV files:
+
+**shipman-confirmed-victims.csv**  
+- DateofDeath
+- Name
+- Age
+- PlaceofDeath
+- Decision
+- yearOfDeath
+- gender
+- fractionalDeathYear
+- ageBracket
+- gender2
+
+**shipman-times-comparison.csv**  
+- Hour
+- Shipman (count)
+- Comparison (reference group)
+
+**Key question:**  
+*What kinds of people did Harold Shipman murder, and when did they die?*
 
 ---
 
-Grâce aux graphiques produits avec Power BI, on peut remarquer que la majorité des victimes de Shipman :
-- est âgé entre 75 et 84 ans (45%)
-- est une femme (83%)
-- est décédé chez soi et entre 1995 et 1997 (204 victimes et environ 30 par année)
-- 15 victimes sur 215 ont été officiellement déclaré
+## 📈 Key Visual & Analytical Findings via Power BI
 
-On remarque également que les déclarations de Shipman sont bien moins éparpillés que les déclarations de décès des autres medecins.
-Lui a tendance à déclarer en majorité vers 15h/16h l'heure de décès, ce qui amène un doute.
+Through dashboards and visuals built in Power BI:
 
-De plus, les valeurs retenues dans la heatmap du notebook Jupyter sont : l'âge et l'heure et la date du décès.
+- **Demographics:**
+  - 45% of victims were aged 75–84
+  - 83% were women
+  - Most deaths occurred at home and between 1995 and 1997 (204 victims, ~30 per year)
+  - Only 15 out of 215 victims were officially declared
+
+- **Timing Patterns:**
+  - Shipman’s declared times of death were far more clustered (often at 15:00–16:00) than those from other doctors.
+  - These unusual patterns raise suspicions about the authenticity of reported death times.
+
+- **Heatmap Insights:**
+  - Age, date, and time of death were the main features used for analysis.
+  - Visualization focused on patterns correlating age brackets and declared times.
 
 ---
 
-**Conclusion**
-Harold Shipman assassine un certain type de personne en majorité. Ce sont les dâmes âgées entre 75 et 84 ans (qui font partie des 15 victimes officielles).
-Mais également des hommes de tout les âges (supérieur à 45 ans), qui sont au nombre de 37, tous faisant partie des victimes illégales non officielles car
-incinérées. Ses victimes les plus jeunes ont au minimum 40 ans. 
+## 🧠 Conclusion
 
-Il a commencé sa série de meurtre en 1975. Et a continué jusqu'à 1998. Les années où il a été le plus actif dans sa série de meurtres ont été 1995, 1996 et 1997 avec 30 à 37 meurtres par an.
+Harold Shipman primarily targeted elderly women aged 75–84 (forming part of the 15 official victims).  
+However, his victims also included men of all older age ranges (37 illicit victims, none officially recognized, many cremated).  
+The youngest known victim was 40 years old. The murder spree stretched from 1975 to 1998, with peak years from 1995 to 1997 (30–37 murders annually).
+
+Power BI enabled the clear identification of demographic and temporal trends in the victim profiles, and made visible the atypical reporting behaviors that set Shipman apart from other practitioners[web:16][web:17][web:18][web:21][web:22].
